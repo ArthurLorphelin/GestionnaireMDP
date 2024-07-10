@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/all_accounts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AllAccounts"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:background="@color/grey">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/menu"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginTop="40dp">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/profile_image_button_all_accounts"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/ic_profile_button"
+            android:layout_alignParentEnd="true"
+            android:visibility="visible"
+            android:contentDescription="@string/profile">
+        </ImageButton>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/all_accounts"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/search_bar_all_accounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search"
+            android:textColor="@color/black"
+            android:textColorHint="#D3D3D3"
+            android:inputType="textMultiLine"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:autofillHints="name">
+        </EditText>
+
+        <ListView
+            android:id="@+id/list_of_all_accounts_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:cacheColorHint="@color/black">
+        </ListView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_account_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:backgroundTint="@color/red"
+        android:textSize="30sp"
+        android:text="@string/add_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white">
+    </Button>
+
+</RelativeLayout>

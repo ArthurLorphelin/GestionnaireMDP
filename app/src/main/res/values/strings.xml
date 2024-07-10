@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GestionnaireMDP</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username_3_dots">Username …</string>
+    <string name="password_3_dots">Password …</string>
+    <string name="incorrect_logs">Incorrect logs</string>
+    <string name="back_to_sign_in">Back to Sign In</string>
+    <string name="menu">MENU</string>
+    <string name="all_accounts">All Accounts :</string>
+    <string name="search">Search …</string>
+    <string name="add_button">+</string>
+    <string name="new_account">New Account :</string>
+    <string name="account_name_3_dots">Account name …</string>
+    <string name="description_3_dots">Description ...</string>
+    <string name="add_account">Add Account</string>
+    <string name="fill_the_edit_text_add_account">Please fill the account name, username and password</string>
+    <string name="account_details">Account details :</string>
+    <string name="modify_account">Modify Account</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="are_you_sure_you_want_to_delete_the_account">Are you sure you want to delete the Account ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="profile">Profile :</string>
+    <string name="do_you_want_to_log_out">Do you want to log out ?</string>
+    <string name="log_out">Log Out</string>
+    <string name="previous_page">Previous Page</string>
+</resources>
