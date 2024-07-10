@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AccountDetails"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:background="@color/grey">
+
+        <TextView
+            android:id="@+id/account_details_name_in_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/account_details"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginTop="40dp">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/profile_image_button_account_details"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/ic_profile_button"
+            android:layout_alignParentEnd="true"
+            android:visibility="visible">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/previous_page_account_details"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/ic_previous_page"
+            android:layout_alignParentStart="true"
+            android:visibility="visible">
+        </ImageButton>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/account_details"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/account_details_name_in_modify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/account_name_3_dots"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:inputType="textMultiLine">
+        </EditText>
+
+        <EditText
+            android:id="@+id/account_details_username_in_modify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_3_dots"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:inputType="textMultiLine">
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/account_details_password_in_modify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_3_dots"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:layout_marginEnd="90dp">
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/account_details_password_visible_image_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_password_visible"
+                android:layout_marginTop="35dp"
+                android:visibility="visible">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/account_details_password_invisible_image_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_password_invisible"
+                android:layout_marginTop="35dp"
+                android:visibility="gone">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/copy_password_image_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_copy_password"
+                android:layout_marginEnd="45dp"
+                android:layout_marginTop="35dp"
+                android:visibility="visible">
+            </ImageButton>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/account_details_description_in_modify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description_3_dots"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:inputType="textMultiLine">
+        </EditText>
+
+        <TextView
+            android:id="@+id/text_view_fill_the_edit_text_modify_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fill_the_edit_text_add_account"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:visibility="gone">
+        </TextView>
+
+        <Button
+            android:id="@+id/modify_account_to_database_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/red"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="@string/modify_account"
+            android:textSize="20sp"
+            android:textColor="@color/white">
+        </Button>
+
+        <Button
+            android:id="@+id/delete_account_to_database_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/red"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/delete_account"
+            android:textSize="20sp"
+            android:textColor="@color/white">
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

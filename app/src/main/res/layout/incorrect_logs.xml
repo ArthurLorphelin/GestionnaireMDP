@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.IncorrectLogs"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/incorrect_logs"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:gravity="center">
+    </TextView>
+
+    <Button
+        android:id="@+id/back_to_sign_in_page_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="@string/back_to_sign_in"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/red"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:layout_centerInParent="true">
+    </Button>
+
+</RelativeLayout>
